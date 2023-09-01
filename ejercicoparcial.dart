@@ -14,7 +14,7 @@ class Producto{
 
   void descuento(int Dcompra, int Dmes, int Dyear){
     int cadu = Dia - Dcompra;
-    if(cadu <=15 && Mes == Dmes && Year == Dyear){
+    if(cadu <=15 && Mes <= Dmes && Year <= Dyear){
       double desc = Precio*0.15;
       Precio = Precio - desc;
     }
@@ -58,13 +58,13 @@ void main(){
       print('Precio:');
       String? p = stdin.readLineSync();
       precio = double.parse(p!);
-      print('Dia:');
+      print('Dia de caducidad:');
       String? d = stdin.readLineSync();
       dia = int.parse(d!);
-      print('Mes:');
+      print('Mes de caducidad:');
       String? m = stdin.readLineSync();
       mes = int.parse(m!);
-      print('Año:');
+      print('Año de caducidad:');
       String? y = stdin.readLineSync();
       year = int.parse(y!);
       var miproducto = Producto(nom!, tipo!, precio, dia, mes, year);
