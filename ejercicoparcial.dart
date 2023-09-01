@@ -1,13 +1,14 @@
 //Andrey Alessandro Ruiz Mass 
 
 class Producto{
-  
+  String nombre;
+  String tipo;
   double precio;
   int dia;
   int mes;
   int year;
 
-  Producto(this.precio, this.dia, this.mes, this.year);
+  Producto(this.nombre, this.tipo, this.precio, this.dia, this.mes, this.year);
   
 
   void descuento(int Dcompra, int Dmes, int Dyear){
@@ -17,4 +18,8 @@ class Producto{
       precio = precio - desc;
     }
   }
+}
+
+void main(){
+
 }
