@@ -10,7 +10,6 @@ class Producto{
   int Year;
 
   Producto(this.Nombre, this.Tipo, this.Precio, this.Dia, this.Mes, this.Year);
-  
 
   void descuento(int Dcompra, int Dmes, int Dyear){
     int cadu = Dia - Dcompra;
@@ -77,7 +76,6 @@ void main(){
       print('precio total actual es: $i');
       break;
     }
-    
   }while(opc != 3);
   print('precio final es $i');
 }
