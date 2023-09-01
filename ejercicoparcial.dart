@@ -72,10 +72,10 @@ void main(){
       i = i+miproducto.Precio;
       break;
       case 2:
-      print(factu);
       print('precio total actual es: $i');
       break;
     }
   }while(opc != 3);
+  print(factu);
   print('precio final es $i');
 }
