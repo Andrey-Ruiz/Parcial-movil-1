@@ -72,6 +72,7 @@ void main(){
       i = i+miproducto.Precio;
       break;
       case 2:
+      print(factu);
       print('precio total actual es: $i');
       break;
     }
